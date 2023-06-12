@@ -1,0 +1,13 @@
+const rps = (p1, p2) => {
+let ranking ={
+  'rock' : 'scissors',
+  'paper' : 'rock',
+  'scissors' : 'paper',
+};
+  if (p1 == p2) return 'Draw!';
+  if (ranking[p1] == p2){
+    return 'Player 1 won!';
+  } else {
+    return 'Player 2 won!';
+  }
+}
