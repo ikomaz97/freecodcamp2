@@ -1,0 +1,14 @@
+function accum(str) {
+  let result = '';
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charAt(i).toUpperCase();
+    result += char;
+    for (let j = 0; j < i; j++) {
+      result += str.charAt(i).toLowerCase();
+    }
+    if (i < str.length - 1) {
+      result += '-';
+    }
+  }
+  return result;
+}
